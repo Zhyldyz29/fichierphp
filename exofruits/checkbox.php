@@ -15,11 +15,4 @@ fwrite($fh,$fruit."\n");
 fclose($fh);
 }
 
-
-
-
-
-
-
-
 ?>

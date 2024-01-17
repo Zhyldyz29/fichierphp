@@ -44,3 +44,8 @@ Pomme
 Poire
 Banane
 Cerise
+Fraise
+Pomme
+Poire
+Banane
+Cerise
