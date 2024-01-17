@@ -10,9 +10,7 @@ foreach($_POST as $cle => $valeur) {
     echo $cle . ":" . $valeur . ";";
 }
 
-
 $phrase = $_POST['nom'].';'.$_POST['prenom'].';'.$_POST['age'];
-
 
 $fh = fopen("unfichier.csv","a+");
 fwrite($fh,$phrase."\n");
