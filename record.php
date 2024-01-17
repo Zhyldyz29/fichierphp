@@ -2,15 +2,15 @@
 
 require('fonctions.php');
 
-debug($_POST); // variable PHP prédéfinie qui récupère les champs input du formulaire appelant.
+debug($_GET); // variable PHP prédéfinie qui récupère les champs input du formulaire appelant.
 // ecrire les donées dans un fichier
 
 
-foreach($_POST as $cle => $valeur) {
+foreach($_GET as $cle => $valeur) {
     echo $cle . ":" . $valeur . "<br>";
 }
 
-$phrase = $_POST['nom'].';'.$_POST['prenom'].';'.$_POST['age'];
+$phrase = $_GET['nom'].';'.$_GET['prenom'].';'.$_GET['age'];
 
 $fh = fopen("unfichier.csv","a+");
 fwrite($fh,$phrase."\n");
