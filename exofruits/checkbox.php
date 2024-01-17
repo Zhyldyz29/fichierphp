@@ -1,18 +1,16 @@
 <?php
 
-require('formulaires.php');
+require('../fonctions.php');
 
+if (isset($_GET['fruit'])) {
 
-$name = $_GET['fruit'];
+    $name = $_GET['fruit'];
 
-
-
-
-foreach($name as $fruit) {
-    echo "Vous avez choisi: ".$fruit."<br>";
-    $fh = fopen("fruits.txt","a+");
-fwrite($fh,$fruit."\n");
-fclose($fh);
+    foreach ($name as $fruit) {
+        echo "Vous avez choisi: " . $fruit . "<br>";
+    }
+} else {
+ 
+    header("Location: tableaufruits.php");
 }
-
 ?>
