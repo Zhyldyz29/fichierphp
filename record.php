@@ -7,7 +7,7 @@ debug($_POST); // variable PHP prédéfinie qui récupère les champs input du f
 
 
 foreach($_POST as $cle => $valeur) {
-    echo $cle . ":" . $valeur . ";";
+    echo $cle . ":" . $valeur . "<br>";
 }
 
 $phrase = $_POST['nom'].';'.$_POST['prenom'].';'.$_POST['age'];
